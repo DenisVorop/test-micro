@@ -199,10 +199,21 @@ const popupBody = document.querySelector('.popup__body')
 const popupOpenBtn = document.querySelector('.open-popup')
 const popupCloseBtn = document.querySelector('.close-popup')
 
+document.body.addEventListener('click', () => {
+    if (popup.classList.contains('popup-active') || popupBody.classList.contains('popup-body-active')) {
+        popup.classList.remove('popup-active')
+        popupBody.classList.remove('popup-body-active')
+    }
+})
+
 popupOpenBtn.addEventListener('click', e => {
-    e.preventDefault()
+    e.stopPropagation()
     popup.classList.add('popup-active')
     popupBody.classList.add('popup-body-active')
+})
+
+popupBody.addEventListener('click', e => {
+    e.stopPropagation()
 })
 
 popupCloseBtn.addEventListener('click', e => {
