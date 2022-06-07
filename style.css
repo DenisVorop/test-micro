@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Gilroy;
+    font-family: GilroyRegular;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -219,7 +219,7 @@ body {
 
 .slide__body {
     display: flex;
-    padding: 80px 80px 0px 50px;
+    padding: 80px 78px 0px 50px;
     height: 100%;
 }
 
@@ -691,7 +691,7 @@ body {
     background-color: rgba(22, 39, 62, 0.7);
     position: absolute;
     z-index: 4;
-    top: -129%;
+    top: -130%;
     left: -257%;
     display: flex;
     align-items: center;
@@ -767,7 +767,7 @@ body {
 .popup__advantage span {
     font-size: 24px;
     color: rgb(140, 201, 232);
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
     display: inline-block;
     margin: 0px 0px 7px 0px;
@@ -816,13 +816,29 @@ body {
 .adv-prev {
     margin: 0px 18px 0px 0px;
     cursor: pointer;
+    display: flex;
 }
 
 .adv-next {
     margin: 0px 0px 0px 8px;
     cursor: pointer;
+    display: flex;
 }
 
 .advantages-visible {
     display: block;
+}
+
+@font-face {
+    font-family: "GilroyRegular";
+    src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GilroyBold";
+    src: url("./fonts/Gilroy-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
 }

@@ -1,9 +1,10 @@
 let slider = document.querySelector('.slider'),
+    slide__btn = document.querySelector('.slide__btn'),
+    global = document.querySelector('.header'),
     sliderList = slider.querySelector('.slider-list'),
     sliderTrack = slider.querySelector('.slider-track'),
     slides = slider.querySelectorAll('.slide'),
     arrows = slider.querySelector('.slider-arrows'),
-    slide__btn = document.querySelector('.slide__btn'),
     prev = arrows.children[0],
     next = arrows.children[1],
     slideWidth = slides[0].offsetWidth,
@@ -162,6 +163,10 @@ let slider = document.querySelector('.slider'),
         transition = false
         swipeEnd()
         allowSwipe = true
+    },
+    back = function () {
+        slideIndex = 0
+        sliderTrack.style.transform = `translate3d(0px, 0px, 0px)`
     }
 
 sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)'
@@ -170,9 +175,10 @@ sliderList.classList.add('grab')
 sliderTrack.addEventListener('transitionend', () => allowSwipe = true)
 slider.addEventListener('touchstart', swipeStart)
 slider.addEventListener('mousedown', swipeStart)
+global.addEventListener('click', back)
 
 slide__btn.addEventListener('click', function () {
-// arrows.addEventListener('click', function () {
+    // arrows.addEventListener('click', function () {
     let target = event.target
 
     if (target.classList.contains('next')) {
