@@ -108,6 +108,10 @@ body {
     right: 50px;
     width: 4%;
     filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
 }
 
 .sperm-img__bottom-left {
@@ -146,6 +150,10 @@ body {
     left: 36%;
     width: 4%;
     filter: blur(13px);
+    -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
 }
 
 .sperm-img__1 {
