@@ -112,6 +112,7 @@ body {
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .sperm-img__bottom-left {
@@ -154,6 +155,7 @@ body {
     -moz-filter: blur(13px);
     -o-filter: blur(13px);
     -ms-filter: blur(13px);
+    backdrop-filter: blur(13px);
 }
 
 .sperm-img__1 {
