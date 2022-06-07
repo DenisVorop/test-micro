@@ -107,12 +107,6 @@ body {
     top: 40px;
     right: 50px;
     width: 4%;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 .sperm-img__bottom-left {
@@ -150,12 +144,6 @@ body {
     bottom: 10%;
     left: 36%;
     width: 4%;
-    filter: blur(13px);
-    -webkit-filter: blur(13px);
-    -moz-filter: blur(13px);
-    -o-filter: blur(13px);
-    -ms-filter: blur(13px);
-    backdrop-filter: blur(13px);
 }
 
 .sperm-img__1 {
@@ -163,7 +151,7 @@ body {
     top: 13%;
     right: -99%;
     width: 63%;
-    animation: spermsVisible1 1s linear 1 alternate;
+    animation: spermsVisible1 3s linear 1 alternate;
 }
 
 .sperm-img__2 {
@@ -172,7 +160,7 @@ body {
     right: -98%;
     width: 41%;
     opacity: 0.5;
-    animation: spermsVisible2 1s linear 1 alternate;
+    animation: spermsVisible2 3s linear 1 alternate;
 }
 
 .sperm-img__3 {
@@ -181,7 +169,7 @@ body {
     right: -92%;
     width: 22%;
     opacity: 0.25;
-    animation: spermsVisible3 1s linear 1 alternate;
+    animation: spermsVisible3 3s linear 1 alternate;
 }
 
 .sperm-img__4 {
@@ -190,7 +178,7 @@ body {
     right: -128%;
     width: 41%;
     opacity: 0.5;
-    animation: spermsVisible4 1s linear 1 alternate;
+    animation: spermsVisible4 3s linear 1 alternate;
 }
 
 .sperm-img__5 {
@@ -199,7 +187,7 @@ body {
     right: -106%;
     width: 18%;
     opacity: 0.25;
-    animation: spermsVisible5 1s linear 1 alternate;
+    animation: spermsVisible5 3s linear 1 alternate;
 }
 
 .slide__info {

@@ -1,6 +1,6 @@
 let slider = document.querySelector('.slider'),
     slide__btn = document.querySelector('.slide__btn'),
-    global = document.querySelector('.header'),
+    global = document.querySelector('.global'),
     sliderList = slider.querySelector('.slider-list'),
     sliderTrack = slider.querySelector('.slider-track'),
     slides = slider.querySelectorAll('.slide'),
